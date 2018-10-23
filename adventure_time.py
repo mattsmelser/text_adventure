@@ -1,5 +1,5 @@
 import random, time, sys
-from mobs import quill_rat, zombie
+from mobs import quill_rat#, zombie
 
 damage = 10
 health = 100
@@ -23,3 +23,4 @@ def character():
     pass
 
 print(start)
+print(quill_rat.print_details)
