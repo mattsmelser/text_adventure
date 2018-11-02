@@ -1,15 +1,15 @@
 import random, time, sys
-from mobs import quill_rat#, zombie
+from mobs import QuillRat#, zombie
 
 damage = 10
 health = 100
 #You want to instantiate the mob/enemy here like below
-# mob = quill_rat()
+mob = QuillRat()  #Instantiate the quill_rat class, now mob is a quill_rat
 
 def attack(mob):
     # then do something like this
     # mob.print_details()
-    print(quill_rat.print_details)
+    mob.print_details()
 
 def display_intro():
     print("Welcome traveler, you have arrived in The Rogue Encampment with the ultimate goal of reaching The Catacombs.")
@@ -23,4 +23,6 @@ def character():
     pass
 
 print(start)
-print(quill_rat.print_details)
+#print(quill_rat.print_details())
+
+attack(mob)
