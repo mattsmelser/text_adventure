@@ -4,21 +4,29 @@ import random
 class QuillRat():
     #mob = quill_rat()
     #mob.print_details()
-    health = 40
-    attack = random.randint(0,16)
+    health = random.randint(1,6)
+    attack = random.randint(0,3)
+    experience = 21
     name = "Quill Rat"
     attack1 = "bite"
     def print_details(self):
        print("You encounter a {}.  It has {} health and it attacks you with {} doing {} damage.".format(self.name, self.health, self.attack1, self.attack))
 
-
 class Zombie():
-    #mob = quill_rat()
-    #mob.print_details()
-    health = 40
-    attack = random.randint(0,16)
+    health = random.randint(7,13)
+    attack = random.randint(2,4)
+    experience = 33
     name = "Zombie"
     attack1 = "smack"
+    def print_details(self):
+       print("You encounter a {}.  It has {} health and it attacks you with {} doing {} damage.".format(self.name, self.health, self.attack1, self.attack))
+
+class Skeleton():
+    health = random.randint(7,12)
+    attack = random.randint(1,4)
+    experience = 34
+    name = "Skeleton"
+    attack1 = "sword"
     def print_details(self):
        print("You encounter a {}.  It has {} health and it attacks you with {} doing {} damage.".format(self.name, self.health, self.attack1, self.attack))
 
