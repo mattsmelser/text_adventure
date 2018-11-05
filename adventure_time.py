@@ -23,7 +23,7 @@ def start():
 def character():
     pass
 
-print(start)
+#print(start)
 #print(quill_rat.print_details())
 
 attack(mob.pick_monster())
