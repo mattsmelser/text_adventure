@@ -26,6 +26,7 @@ def character():
 
 
 #attack(mob.pick_monster()) #(this one works, commenting it out for testing)
-attack(mob.pick_monster2("Blood Moor"))
+#attack(mob.pick_monster2("Blood Moor"))
+attack(mob.pick_monster3)
 
 #create list and randomly select from the list to choose which monster to fight

@@ -80,9 +80,14 @@ class MonsterGenerator():
         #print(self.location_map)
 
     def pick_monster2(self, location):
+        output = []
         for local in location:
             if self.location_map == location:
-                print (self.location_map)
+                #print (self.location_map)
+                monster = self.location_map[random.randint(0,(len(self.location_map)-1))]
+                output.append(monster)
+        return output
+        return self.locaiton_map[location]
 
 
     def pick_monster3(self, location):
