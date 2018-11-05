@@ -48,6 +48,15 @@ class Spider():
     def print_details(self):
        print("You encounter a {}.  It has {} health and it attacks you with {} doing {} damage.".format(self.name, self.health, self.attack1, self.attack))
 
+class CaveSpider():
+    health = random.randint(12,20)
+    attack = random.randint(5,17)
+    experience = 57
+    name = "Cave Spider"
+    attack1 = "venomous bite"
+    def print_details(self):
+       print("You encounter a {}.  It has {} health and it attacks you with {} doing {} damage.".format(self.name, self.health, self.attack1, self.attack))
+
 class MonsterGenerator():
     def __init__(self):
         self.monster_list = []
