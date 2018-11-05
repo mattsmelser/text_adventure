@@ -6,6 +6,7 @@ health = 100
 #You want to instantiate the mob/enemy here like below
 mob = MonsterGenerator()
 mob.generate_list()
+mob.generate_location_list()
 
 def attack(mob):
     # then do something like this
@@ -26,6 +27,7 @@ def character():
 print(start)
 #print(quill_rat.print_details())
 
-attack(mob.pick_monster())
+attack(mob.pick_monster1())
+attack(mob.pick_monster2("cave"))
 
 #create list and randomly select from the list to choose which monster to fight
