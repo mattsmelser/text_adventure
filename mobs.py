@@ -65,15 +65,27 @@ class MonsterGenerator():
         self.monster_list.append(Skeleton())
         self.monster_list.append(Ghost())
         self.monster_list.append(Spider())
+        self.monster_list.append(CaveSpider())
     def pick_monster(self):
         return self.monster_list[random.randint(0,(len(self.monster_list)-1))] #randomly picks monster from above list
-        #changed the list to len(self.monster_list)-1, for some reason it was still able to grab the max number and throwing the error
+        #changed the list to len(self.monster_list)-1, for some reason it was still able to grab the max number and throwing an error
 
     def generate_location_list(self):
-        self.location_map["cave"] = Zombie()
-        self.location_map["swamp"] = QuillRat()
+        self.location_map["Blood Moor"] = Zombie(), QuillRat()
+        self.location_map["Den Of Evil"] = QuillRat(), Skeleton(), Zombie()
+        self.location_map["Cold Plains"] = Skeleton(), Zombie(), QuillRat()
+        self.location_map["Cave Level 1"] = CaveSpider()
+        self.location_map["Cave Level 2"] = CaveSpider()
+        self.location_map["Stony Field"] = Spider(), Skeleton(), Zombie(), Ghost()
+        #print(self.location_map)
 
     def pick_monster2(self, location):
+        for local in location:
+            if self.location_map == location:
+                print (self.location_map)
+
+
+    def pick_monster3(self, location):
         output = []
         for monster in self.monster_list:
           if monster.location == location:

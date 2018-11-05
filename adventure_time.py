@@ -24,10 +24,8 @@ def start():
 def character():
     pass
 
-#print(start)
-#print(quill_rat.print_details())
 
-attack(mob.pick_monster1())
-attack(mob.pick_monster2("cave"))
+#attack(mob.pick_monster()) #(this one works, commenting it out for testing)
+attack(mob.pick_monster2("Blood Moor"))
 
 #create list and randomly select from the list to choose which monster to fight
