@@ -1,6 +1,7 @@
 import random, time, sys
 from mobs import QuillRat, Zombie, MonsterGenerator
 from char import Character
+from items import items
 
 damage = 10
 health = 100

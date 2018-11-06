@@ -7,6 +7,8 @@ class Character():
     attack1 = "punch"
     attack2 = "kick"
     inventory = {"Health Potion": 1, "Sword": 1, "Scroll of Town Portal": 1}
+    character_level = 1
+    character_exp = 0
     
 
 
