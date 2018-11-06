@@ -87,7 +87,7 @@ class MonsterGenerator():
                 monster = self.location_map[random.randint(0,(len(self.location_map)-1))]
                 output.append(monster)
         return output
-        return self.locaiton_map[location]
+        return self.location_map[location]
 
 
     def pick_monster3(self, location):
