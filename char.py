@@ -6,6 +6,9 @@ class Character():
     name = "Hero"
     attack1 = "punch"
     attack2 = "kick"
+    inventory = {"Health Potion": 1, "Sword": 1, "Scroll of Town Portal": 1}
+    
+
 
     def print_details(self):
        print("You respond to the monster by attacking with {}.  You did {} damage.".format(self.attack1, self.attack))
